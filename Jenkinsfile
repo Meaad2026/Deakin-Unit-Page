@@ -8,5 +8,12 @@ pipeline {
                 bat 'dir'
             }
         }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                bat 'if exist index.html (echo Test Passed) else (echo Test Failed)'
+            }
+        }
     }
 }
