@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'ls -la'
+                bat 'dir'
             }
         }
     }
