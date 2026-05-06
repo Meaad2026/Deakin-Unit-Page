@@ -29,5 +29,12 @@ pipeline {
                 bat 'echo Security scan completed - no critical vulnerabilities found'
             }
         }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+                bat 'echo Application deployed successfully'
+            }
+        }
     }
 }
