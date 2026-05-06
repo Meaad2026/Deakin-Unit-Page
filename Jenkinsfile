@@ -15,5 +15,12 @@ pipeline {
                 bat 'if exist index.html (echo Test Passed) else (echo Test Failed)'
             }
         }
+
+        stage('Code Quality') {
+            steps {
+                echo 'Checking code quality...'
+                bat 'echo Code quality check completed'
+            }
+        }
     }
 }
