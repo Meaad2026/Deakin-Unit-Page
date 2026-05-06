@@ -43,5 +43,12 @@ pipeline {
                 bat 'echo Application released to production'
             }
         }
+
+        stage('Monitoring') {
+            steps {
+                echo 'Monitoring application...'
+                bat 'echo Monitoring and alerts configured'
+            }
+        }
     }
 }
