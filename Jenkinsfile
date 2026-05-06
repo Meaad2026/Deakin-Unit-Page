@@ -36,5 +36,12 @@ pipeline {
                 bat 'echo Application deployed successfully'
             }
         }
+
+        stage('Release') {
+            steps {
+                echo 'Releasing application...'
+                bat 'echo Application released to production'
+            }
+        }
     }
 }
